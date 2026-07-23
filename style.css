@@ -1,11 +1,18 @@
 :root {
-  --ink: #1c2230;
-  --ink-soft: #4a5468;
+  /* Bogi's brand palette */
+  --pink: #ea638c;
+  --burgundy: #89023e;
+  --sage: #a4ab93;
+  --slate: #30343f;
+  --near-black: #1b2021;
+
+  --ink: var(--near-black);
+  --ink-soft: color-mix(in srgb, var(--slate) 78%, white 22%);
   --bg: #ffffff;
-  --bg-alt: #f5f6f9;
-  --accent: #2f5d8a;
-  --accent-soft: #e8eef5;
-  --border: #e4e6ec;
+  --bg-alt: color-mix(in srgb, var(--sage) 14%, white 86%);
+  --accent: var(--burgundy);
+  --accent-soft: color-mix(in srgb, var(--pink) 16%, white 84%);
+  --border: color-mix(in srgb, var(--slate) 14%, white 86%);
   --radius: 10px;
   --max-width: 960px;
 }
@@ -116,7 +123,7 @@ a:hover { text-decoration: underline; }
 }
 
 .btn:hover {
-  background: #244a6e;
+  background: color-mix(in srgb, var(--accent) 80%, black 20%);
   text-decoration: none;
 }
 
